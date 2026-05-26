@@ -1,0 +1,15 @@
+[project]
+name = "sletning-af-aftaler-attended"
+version = "1.0.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "itk-dev-shared-components>=2.16.2",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
+    "pylint>=4.0.5",
+]
