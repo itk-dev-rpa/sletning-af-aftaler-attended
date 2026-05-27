@@ -21,7 +21,7 @@ jobs:
       run: uv python install ${{ matrix.python-version }}
 
     - name: Install project and dev dependencies
-      run: uv sync --frozen --extra dev
+      run: uv sync --frozen --group dev
 
     - name: Analyzing the code with pylint
       run: uv run pylint $(git ls-files '*.py')
