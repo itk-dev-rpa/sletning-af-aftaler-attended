@@ -28,7 +28,7 @@ def process():
 
     try:
         session = multi_session.get_all_sap_sessions()[0]
-    except pywintypes.com_error:
+    except pywintypes.com_error:  # pylint: disable=no-member
         messagebox.showerror("SAP ikke fundet", "SAP blev ikke fundet åben det venligst før robotten startes. Robotten stopper.")
         return
 
