@@ -13,3 +13,10 @@ dev = [
     "flake8>=7.3.0",
     "pylint>=4.0.5",
 ]
+
+[tool.pylint]
+disable = [
+  "line-too-long",
+  "too-many-locals",
+  "too-few-public-methods",
+]
